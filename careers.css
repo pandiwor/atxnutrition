@@ -1,0 +1,77 @@
+/* This file is reserved for the stylesheet for careers.html */
+img.social{
+  padding: 2em;
+  display: block;
+  margin-left:auto; 
+  margin-right: auto; 
+}
+td {
+  text-align: center;
+}
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#header_img {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 30%;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+  text-align: center;
+  margin: 25px;
+  color: lightsalmon;
+}
+h2 {
+  text-align: center;
+  margin: 25px;
+  color: lightsalmon;
+}
+#mainMenu {
+  margin-left: auto;
+  margin-right: auto;
+}
+label.error {
+  color: red;
+  font-family: Arial, Helvetica, sans-serif;
+}
+input.error {
+  border: 1px dashed;
+  border-color: red;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+form {
+  background-color: mintcream; 
+  padding: 20px;
+}
+input, textarea {
+  padding: 9px; 
+  font-family: Arial, Helvetica, sans-serif;
+  background: #FFFFFF;
+  border: 1px solid gray;
+  box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px; 
+  -moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px; 
+  -webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+  background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF), color-stop(4%, #EEEEEE), to(#FFFFFF)); 
+  background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px); 
+}
+textarea { 
+  width: 400px; 
+  max-width: 400px; 
+  height: 150px; 
+  line-height: 150%; 
+} 
+#application label {
+  font-family: Arial, Helvetica, sans-serif;
+}
+h2 {
+  text-align: center;
+  color:color: lightsalmon;
+
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<title>About Us</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="About the business">
+	<meta name="author" content="group 22">
+  <link href="about_us.css" rel="stylesheet" type="text/css" />
+</head> 
+
+<body>
+  <div id="Header">
+    <table id="mainMenu">
+      <tr>
+        <td width="300px"> 
+          <a href="index.html"><img src="https://bit.ly/3qjba39" width="125"></a>
+        </td>
+        <td> 
+          <a href="menu.html">
+          <h3> Our Menu </h3>
+            
+        </td>
+        <td> 
+          <a href="hours_and_directions.html"> <h3> Hours and Directions </h3> </a>
+        </td>
+        <td> 
+          <a href="careers.php"> <h3> Careers </h3> </a>
+        </td>
+        <td> 
+          <a href="connect/connect.html"> <h3> Connect </h3> </a>
+        </td>
+        <td> 
+          <a href="about_us.html"> <h3> About Us </h3> </a>
+        </td>
+        <td>
+          <a href="CTC.html"> <h3> Contact the Creators </h3>
+        </td>
+      </tr>
+    </table>
+        
+  </div>
+  <h4> About ATX Nutrition </h4>
+  <div class='info'>
+    <p>ATX Nutrition was founded on a healthy and quick food option with clean energy drinks for the area.</p><br>
+    
+    <p>People in the West Campus area are extremely busy and needed a place that can fill them up and give them energy for hours without the crash later in the day.  Our business offers phenomenal meal replacement smoothies with all the vitamins, minerals and micronutrients our bodies require. Each smoothie comes with a delicious, energizing drink that is full of antioxidants- NOT Sugars!!</p><br>
+    
+    <p>All of our products are made with the finest ingredients and the best protein with the highest digestibility rating possible. Our purpose is to help people feel great, have better days and achieve more.</p><br>
+    
+    <p>We feel every shake and drink that goes out the door is helping one more person achieve their goals with more energy and great nutrition. Our vision and goal is to help everyone in West Campus area experience the feeling of what the best energy, nutrition and vitality can do for them.</p><br>
+
+    <p> We feature monthly specialty drinks to bring you the latest flavors and satisfy your cravings, and to keep you energized and ready to start your day!</p><br>
+    
+  </div>
+
+  <center><div id="showNutrients">
+  <button class="btn" type="button" onclick="loadImg()">Learn More About the Nutrients</button>
+  </div></center>
+
+  <div class="vid">
+    <video width="400" controls>
+      <source src="menu_pics/atxvid.mp4" type="video/mp4">
+  </div>
+
+
+  <!--
+  <div class="pics">
+    <img id="center" src="about_us_images/nutrients.jpeg">
+  </div>
+  -->
+  
+  <!--AJAX -->
+  <script>
+  function loadImg() {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("showNutrients").innerHTML =
+        this.responseText;
+      }
+    };
+    xhttp.open("GET", "about_us.txt", true);
+    xhttp.send();
+  }
+  </script>
+
+</body>
+<hr>
+<div id="footer">
+   <small> &copy;UT CS329E: Project Group 22 | <script>document.write(new Date().getFullYear())</script> </small> 
+</footer>
+</html>
